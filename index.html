@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonie</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <form action="">
+        <h1>Phonie Details</h1>
+        <p>Input your Details Here</p>
+        <div>
+          <label for="name">Name:</label>
+          <div>
+            <input
+              type="text"
+              name="fullName"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+        </div>
+        <div>
+          <label for="telephone">Phone Number:</label>
+          <select name="country-code" id="country-code">
+            <option>Country code</option>
+            <option value="Kenya">🇰🇪: +254</option>
+            <option value="Nigeria">🇳🇬: +234</option>
+          </select>
+          <div>
+            <input
+              type="tel"
+              name="phoneNumber"
+              value=""
+              id="phoneNumber"
+              required
+            />
+          </div>
+          <div id="nigeria-logo" hidden>
+            <img class='nigeriaLogo' src="Image/9Mobile.webp" alt="9Mobile" width='100px' height="100px">
+            <img class='nigeriaLogo' src="image/airtel.jpg" alt="airtel" width="100px" height="100px">
+            <img class='nigeriaLogo' src="image/GLO.jpg" alt="GLO" width="100px" height="100px">
+            <img class='nigeriaLogo' src="image/mtn.jpg" alt="mtn" width="100px" height="100px">
+          </div>
+          <div id="kenya-logo" hidden>
+            <img src="image/Faiba Kenya.jpeg" alt="Faiba" width="80px" height="80px">
+            <img src="image/airtel.jpg" alt="airtel" width="80px" height="80px">
+            <img src="image/mtn.jpg" alt="airtel" width="80px" height="80px">
+            <img src="image/safaricom Kenya.jpg" alt="safaricom" width="80px" height="80px">
+            <img src="image/telkom-kenya.png" alt="telkom-kenya" width="80px" height="80px">
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
