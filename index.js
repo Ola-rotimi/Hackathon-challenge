@@ -13,7 +13,7 @@ let mtn = [
   "0906",
 ];
 
-airtel = [
+let airtel = [
   "0802",
   "0808",
   "0808",
@@ -25,9 +25,9 @@ airtel = [
   "0901",
 ];
 
-glo = ["0805", "0807", "0811", "0815", "0905"];
+let glo = ["0805", "0807", "0811", "0815", "0905"];
 
-etisalat = ["0809", "0817", "0718", "0908", "0909"];
+let etisalat = ["0809", "0817", "0718", "0908", "0909"];
 
 let countryCode = document.querySelector(`#country-code`);
 
@@ -38,12 +38,7 @@ let phoneNumber = document.querySelector(`#phoneNumber`);
 phoneNumber.addEventListener(`input`, validatePhoneNumber);
 
 function selectCountryCode() {
-  if (countryCode.value == "") {
-    return (
-      document.querySelector("#kenya-logo").setAttribute("hidden", "true"),
-      document.querySelector("#nigeria-logo").setAttribute("hidden", "true")
-    );
-  } else if (countryCode.value == "Nigeria") {
+  if (countryCode.value == "Nigeria") {
     return (
       document.querySelector("#nigeria-logo").removeAttribute("hidden"),
       document.querySelector("#kenya-logo").setAttribute("hidden", "true")
